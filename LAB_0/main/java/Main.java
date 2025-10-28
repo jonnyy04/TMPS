@@ -11,7 +11,7 @@ public class Main {
         double finalAmount = discount.apply(order.getAmount());
         System.out.println("After discount: " + finalAmount);
 
-        PaymentMethod payment = new CreditCardPayment();
+        PaymentMethod payment = new CashPayment();
         PaymentProcessor processor = new PaymentProcessor(payment);
         processor.process(finalAmount);
     }

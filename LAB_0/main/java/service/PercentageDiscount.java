@@ -3,6 +3,6 @@ package service;
 public class PercentageDiscount extends Discount {
     @Override
     public double apply(double amount) {
-        return amount * 0.9; // reducere 10%
+        return amount * 0.9;
     }
 }
