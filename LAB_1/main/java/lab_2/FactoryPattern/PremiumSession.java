@@ -5,16 +5,16 @@ public class PremiumSession implements TutoringProduct {
 
     public PremiumSession(String subject) {
         this.subject = subject;
-        System.out.println("  -> Creare Sesiune PREMIUM pentru " + subject);
+        System.out.println(" Creare Sesiune PREMIUM pentru " + subject);
     }
 
     @Override
     public void prepareSession() {
-        System.out.println("  -> PREMIUM: Prepara materialele avansate, inregistrare activata si suport dedicat.");
+        System.out.println("  PREMIUM: Prepara materialele avansate, inregistrare activata si suport dedicat.");
     }
 
     @Override
     public void scheduleTutor(String tutorName) {
-        System.out.println("  -> PREMIUM: Aloca profesorul expert " + tutorName + " cu durata de 90 de minute.");
+        System.out.println("  PREMIUM: Aloca profesorul expert " + tutorName + " cu durata de 90 de minute.");
     }
 }

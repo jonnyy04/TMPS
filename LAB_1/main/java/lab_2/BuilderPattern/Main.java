@@ -13,6 +13,7 @@ public class Main {
 
         ReportBuilder directBuilder = new DetailedReportBuilder();
         System.out.println("--- 2. DIRECT CONSTRUCTION (Without Director) ---");
+
         directBuilder.buildHeader("Custom Report");
         directBuilder.buildStudentSummary(5, "Excellent");
         // no recommendations

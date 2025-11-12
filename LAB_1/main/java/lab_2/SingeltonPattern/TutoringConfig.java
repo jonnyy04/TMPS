@@ -2,9 +2,6 @@ package lab_2.SingeltonPattern;
 
 public class TutoringConfig {
 
-
-    // 'volatile' este crucial pentru DCL, asigurând că toate firele de execuție
-    // văd instanța imediat după ce a fost complet inițializată.
     private static volatile TutoringConfig instance;
 
     private String databaseUrl;
@@ -27,7 +24,7 @@ public class TutoringConfig {
         return instance;
     }
 
-    // Getters și Setters
+    // Getters si Setters
     public String getDatabaseUrl() {
         return databaseUrl;
     }
